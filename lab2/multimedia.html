@@ -11,14 +11,14 @@
     <link rel="icon" type="image/x-icon" href="images/mala.ico" />
     <title>Lisboa</title>
 
-    <!-- DUVIDAS:
-    - multiplas keywords: como fazer?
-    - nao existe rel = shortcut icon ??? só icon???
-    -->
-
     <style>
         img {
             border: 2px solid black;
+        }
+
+        p {
+            font-family: Georgia, serif;
+            font-size: 18px;
         }
 
         .background {
@@ -26,10 +26,28 @@
             background-image: linear-gradient(-25deg, #b6d1f1 0%, #ffffff 74%);
         }
 
-        h1, h2, a {
+        h1,
+        h2,
+        a {
             font-family: sans-serif;
         }
+
+        iframe[name="foto"] {
+            border: 4px double black;
+        }
     </style>
+
+    <script type="text/javascript">
+        function alterarDescricaoFoto(nome) {
+            if (nome != null
+                && nome != undefined
+                && nome !== "") {
+
+                var descricao = document.getElementById("descricaoFoto");
+                descricao.innerHTML = nome;
+            }
+        }
+    </script>
 </head>
 
 <body class="background">
@@ -44,40 +62,32 @@
     <a href="info.html">Informações</a> |
     <a href="../index.html">Home</a>
 
+    <br><br>
+    <h2><u>Multimédia</u></h2>
+    <h3>Fotografias</h3>
+    <p>Espreite alguns exemplos do muito que poderá visitar na cidade de Lisboa:</p>
+    <p>
+        <a href="images/lisboa1_grande.jpg" target="foto" onclick="alterarDescricaoFoto('Praça do Comércio')">
+            <img src="images/lisboa1_pequena.jpg" alt="foto 1 lisboa">
+        </a>
+        <a href="images/lisboa2_grande.jpg" target="foto" onclick="alterarDescricaoFoto('Torre de Belém')">
+            <img src="images/lisboa2_pequena.jpg" alt="foto 2 lisboa">
+        </a>
+        <a href="images/lisboa3_grande.jpg" target="foto"
+            onclick="alterarDescricaoFoto('O &quot;Bondinho amarelo&quot; de Lisboa')">
+            <img src="images/lisboa3_pequena.jpg" alt="foto 3 lisboa">
+        </a>
+    </p>
+
+    <p id="descricaoFoto">Praça do Comércio</p>
+    <iframe src="images/lisboa1_grande.jpg" name="foto" width="600" height="400">
+    </iframe>
+
+    <h3>Vídeo</h3>
+    <p>
+
+    </p>
+
 </body>
 
 </html>
-
-
-<!-- IGNORE TAGS:
-    <p>
-        Na Unidade Curricular de
-        <a href="https://moodle.ensinolusofona.pt/course/view.php?id=1596">
-            Programação Web
-        </a>
-        abordaremos os princípios básicos associados ao desenvolvimento para a Web,
-        tanto do lado <i>back-end</i> como <i>front-end</i>.
-    </p>
-
-    <p>
-        Aprender-se-ão as seguintes tecnologias &#127760;:
-    </p>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Python</li>
-        <li>Django</li>
-        <li>Javascript</li>
-    </ul>
-    <p>
-        De forma a consolidar todos os conhecimentos, será feito
-        um laboratório semanal, de entrega obrigatória, de aplicação
-        da matéria lecionada. Irá ser desenvolvido também um projeto.
-    </p>
-    
-    <ul>
-        <li>
-            <a href="report_ficha1.html">Conhecer a Internet</a>
-        </li>
-    </ul>
--->
