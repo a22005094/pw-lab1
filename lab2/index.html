@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Some website metadata -->
+    <meta name="author" content="Rui Joaquim">
+    <meta name="keywords" content="lisboa, cidade, conhecer">
+    <meta name="description" content="Website sobre Lisboa">
+    <!-- Site icon && title -->
+    <link rel="icon" type="image/x-icon" href="images/mala.ico" />
+    <title>Lisboa</title>
+
+    <!-- DUVIDAS:
+    - multiplas keywords: como fazer?
+    - nao existe rel = shortcut icon ??? só icon???
+    -->
+
+    <style>
+        blockquote {
+            font-family: Georgia, serif;
+            position: relative;
+            margin: 0.5em;
+            padding: 0.5em 2em 0.5em 4em;
+        }
+
+        /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+        blockquote:before {
+            font-family: Georgia, serif;
+            position: absolute;
+            font-size: 6em;
+            line-height: 1;
+            top: 0;
+            left: 0;
+            content: "\201C";
+        }
+
+        blockquote:after {
+            font-family: Georgia, serif;
+            position: absolute;
+            /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+            float: right;
+            font-size: 6em;
+            line-height: 1;
+            right: 0.5em;
+            bottom: -0.5em;
+            content: "\201D";
+        }
+
+        img {
+            border: 2px solid black;
+        }
+
+        .background {
+            background-color: #ffffff;
+            background-image: linear-gradient(-25deg, #b6d1f1 0%, #ffffff 74%);
+        }
+
+        h1, h2, a {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<!-- previous back color: style="background-color: #F6FDFF;" -->
+<body class="background">
+    <h1>Lisboa</h1>
+    <img src="images/lisboa.jpg" alt="foto de lisboa">
+    <br />
+
+    <!-- Links navegacao na pagina -->
+    <a href="index.html"><b>Introdução</b></a> |
+    <a href="local.html">Localização</a> |
+    <a href="multimedia.html">Multimédia</a> |
+    <a href="info.html">Informações</a> |
+    <a href="../index.html">Home</a>
+
+    <br />
+    <h2><u>Introdução</u></h2>
+    <div style="width: 80%; border: 1px solid black; padding-left: 15px;">
+        <blockquote>
+            
+                <i>
+                    <p>
+                        Lisboa é a capital de Portugal e a cidade mais populosa do país com uma população de 545 923
+                        habitantes
+                        (censo de 2021) dentro dos seus limites administrativos.
+                    </p>
+                    <p>
+                        Na Área Metropolitana de Lisboa, residem 2 871 133 pessoas (2021), sendo por isso a maior e mais
+                        populosa área metropolitana do país.
+                    </p>
+                    <p>
+                        Lisboa é o centro político de Portugal, sede do Governo e da residência do chefe de Estado.
+                    </p>
+                </i>
+            
+        </blockquote>
+        <br />
+        <blockquote>
+            <i>
+                <p>
+                    Lisboa é considerada como cidade global devido à sua importância em aspectos financeiros,
+                    comerciais, mediáticos, artísticos, educacionais e turísticos (...)
+                </p>
+                <p>
+                    É um dos principais centros económicos do continente europeu (...)
+                </p>
+            </i>
+        </blockquote>
+        <h3>
+            <i>
+                <b>
+                    (Fonte: Wikipedia)
+                </b>
+            </i>
+        </h3>
+    </div>
+
+    <br>
+    <br>
+    <center>
+        <h1>Lisboa é 🔝!</h1>
+
+    </center>
+
+
+    <br />
+    <h3>PORQUÊ?</h3>
+    <ul>
+        <li>É a minha cidade Portuguesa favorita</li>
+
+        futebol slb...
+        onde estudo...
+        excelente local de turismo...
+
+        onde pretendo trabalhar e morar no futuro!
+
+        Quer saber mais sobre Lisboa? veja (a AQUI a)
+
+    </ul>
+
+</body>
+
+</html>
+
+
+<!-- IGNORE TAGS:
+    <p>
+        Na Unidade Curricular de
+        <a href="https://moodle.ensinolusofona.pt/course/view.php?id=1596">
+            Programação Web
+        </a>
+        abordaremos os princípios básicos associados ao desenvolvimento para a Web,
+        tanto do lado <i>back-end</i> como <i>front-end</i>.
+    </p>
+
+    <p>
+        Aprender-se-ão as seguintes tecnologias &#127760;:
+    </p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Python</li>
+        <li>Django</li>
+        <li>Javascript</li>
+    </ul>
+    <p>
+        De forma a consolidar todos os conhecimentos, será feito
+        um laboratório semanal, de entrega obrigatória, de aplicação
+        da matéria lecionada. Irá ser desenvolvido também um projeto.
+    </p>
+    
+    <ul>
+        <li>
+            <a href="report_ficha1.html">Conhecer a Internet</a>
+        </li>
+    </ul>
+-->

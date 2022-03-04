@@ -1,0 +1,10 @@
+###################################
+Creditos por ideias usadas no site:
+
+[1] CSS para blockquotes com aspas grandes
+https://stackoverflow.com/questions/16325687/make-big-quotes-with-blockquote
+
+[2] CSS para background-color do site
+https://www.eggradients.com/category/blue-white-gradient
+
+###################################
