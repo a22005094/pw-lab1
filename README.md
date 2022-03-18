@@ -1,9 +1,8 @@
-# pw-lab1
-Lab 1 Programação Web
+# pw-labs
+Laboratórios de Programação Web
 
-## Link para website da Ficha1:
-https://a22005094-pw-lab1.herokuapp.com/
-
+## Link para aplicação Heroku:
+https://pw-labs-ruijoaquim-a22005094.herokuapp.com/
 
 Rui Joaquim
 a22005094
