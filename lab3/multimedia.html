@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Some website metadata -->
+    <meta name="author" content="Rui Joaquim">
+    <meta name="keywords" content="lisboa, cidade, conhecer">
+    <meta name="description" content="Website sobre Lisboa">
+    <!-- Site icon && title -->
+    <link rel="icon" type="image/x-icon" href="images/mala.ico" />
+    <title>Lisboa</title>
+
+    <style>
+        img {
+            border: 2px solid black;
+        }
+
+        p {
+            font-family: Georgia, serif;
+            font-size: 18px;
+        }
+
+        .background {
+            background-color: #ffffff;
+            background-image: linear-gradient(-25deg, #b6d1f1 0%, #ffffff 74%);
+        }
+
+        h1,
+        h2,
+        a {
+            font-family: sans-serif;
+        }
+
+        iframe[name="foto"] {
+            border: 4px double black;
+        }
+
+        footer {
+            font-size: 20px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function alterarDescricaoFoto(nome) {
+            if (nome != null
+                && nome != undefined
+                && nome !== "") {
+
+                var descricao = document.getElementById("descricaoFoto");
+                descricao.innerHTML = nome;
+            }
+        }
+    </script>
+</head>
+
+<body class="background">
+    <h1>Lisboa</h1>
+    <img src="images/lisboa.jpg" alt="foto de lisboa">
+    <br />
+
+    <!-- Links navegacao na pagina -->
+    <nav>
+        <a href="index.html">Introdução</a> |
+        <a href="local.html">Localização</a> |
+        <a href="multimedia.html"><b>Multimédia</b></a> |
+        <a href="info.html">Informações</a> |
+        <a href="../index.html">Home</a>
+    </nav>
+
+    <br><br>
+    <main>
+        <section>
+            <h2><u>Multimédia</u></h2>
+            <ul>
+                <li>
+                    <a href="#verFotos">Ver Fotos</a>
+                </li>
+                <li>
+                    <a href="#verVideo">Ver Vídeo</a>
+                </li>
+                <br /><br />
+            </ul>
+        </section>
+
+        <section>
+            <h3 id="verFotos">Fotografias</h3>
+            <p>Espreite alguns exemplos do muito que poderá visitar na cidade de Lisboa:</p>
+            <p>
+                <a href="images/lisboa1_grande.jpg" target="foto" onclick="alterarDescricaoFoto('Praça do Comércio')">
+                    <img src="images/lisboa1_pequena.jpg" alt="foto 1 lisboa">
+                </a>
+                <a href="images/lisboa2_grande.jpg" target="foto" onclick="alterarDescricaoFoto('Torre de Belém')">
+                    <img src="images/lisboa2_pequena.jpg" alt="foto 2 lisboa">
+                </a>
+                <a href="images/lisboa3_grande.jpg" target="foto"
+                    onclick="alterarDescricaoFoto('O &quot;Bondinho amarelo&quot; de Lisboa')">
+                    <img src="images/lisboa3_pequena.jpg" alt="foto 3 lisboa">
+                </a>
+            </p>
+
+            <p id="descricaoFoto">Praça do Comércio</p>
+            <iframe src="images/lisboa1_grande.jpg" name="foto" width="600" height="400">
+            </iframe>
+        </section>
+
+        <section>
+            <h3 id="verVideo">Vídeo introdutório da cidade</h3>
+            <iframe width="600" height="400" src="https://www.youtube.com/embed/ftvRNhs_dmw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </section>
+    </main>
+
+    <br /><br />
+    <hr>
+    <footer>
+        <i>
+            By Rui Miguel Andrade Joaquim - a22005094 - EI 2021/22 @ ULHT
+        </i>
+    </footer>
+</body>
+
+</html>

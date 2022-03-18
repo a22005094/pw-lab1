@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Some website metadata -->
+    <meta name="author" content="Rui Joaquim">
+    <meta name="keywords" content="lisboa, cidade, conhecer">
+    <meta name="description" content="Website sobre Lisboa">
+    <!-- Site icon && title -->
+    <link rel="icon" type="image/x-icon" href="images/mala.ico" />
+    <title>Lisboa</title>
+
+    <!-- DUVIDAS:
+    - multiplas keywords: como fazer?
+    - nao existe rel = shortcut icon ??? só icon???
+    -->
+
+    <style>
+        blockquote {
+            font-family: Georgia, serif;
+            position: relative;
+            margin: 0.5em;
+            padding: 0.5em 2em 0.5em 4em;
+        }
+
+        /* Thanks: http://callmenick.com/post/styling-blockquotes-with-css-pseudo-classes */
+        blockquote:before {
+            font-family: Georgia, serif;
+            position: absolute;
+            font-size: 6em;
+            line-height: 1;
+            top: 0;
+            left: 0;
+            content: "\201C";
+        }
+
+        blockquote:after {
+            font-family: Georgia, serif;
+            position: absolute;
+            /* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+            float: right;
+            font-size: 6em;
+            line-height: 1;
+            right: 0.5em;
+            bottom: -0.5em;
+            content: "\201D";
+        }
+
+        img {
+            border: 2px solid black;
+        }
+
+        .background {
+            background-color: #ffffff;
+            background-image: linear-gradient(-25deg, #b6d1f1 0%, #ffffff 74%);
+        }
+
+        h1,
+        h2,
+        a,
+        ul {
+            font-family: sans-serif;
+        }
+
+        ul {
+            display: inline-block;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        footer {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<!-- previous back color: style="background-color: #F6FDFF;" -->
+
+<body class="background">
+    <h1>Lisboa333</h1>
+    <img src="images/lisboa.jpg" alt="foto de lisboa">
+    <br />
+
+    <!-- Links navegacao na pagina -->
+    <nav>
+        <a href="index.html"><b>Introdução</b></a> |
+        <a href="local.html">Localização</a> |
+        <a href="multimedia.html">Multimédia</a> |
+        <a href="info.html">Informações</a> |
+        <a href="../index.html">Home</a>
+    </nav>
+    <br />
+
+    <main>
+        <h2><u>Introdução</u></h2>
+
+        <section>
+            <div style="width: 80%; border: 1px solid black; padding-left: 15px;">
+                <blockquote>
+
+                    <i>
+                        <p>
+                            Lisboa é a capital de Portugal e a cidade mais populosa do país com uma população de 545 923
+                            habitantes
+                            (censo de 2021) dentro dos seus limites administrativos.
+                        </p>
+                        <p>
+                            Na Área Metropolitana de Lisboa, residem 2 871 133 pessoas (2021), sendo por isso a maior e
+                            mais
+                            populosa área metropolitana do país.
+                        </p>
+                        <p>
+                            Lisboa é o centro político de Portugal, sede do Governo e da residência do chefe de Estado.
+                        </p>
+                    </i>
+
+                </blockquote>
+                <br />
+                <blockquote>
+                    <i>
+                        <p>
+                            Lisboa é considerada como cidade global devido à sua importância em aspectos financeiros,
+                            comerciais, mediáticos, artísticos, educacionais e turísticos (...)
+                        </p>
+                        <p>
+                            É um dos principais centros económicos do continente europeu (...)
+                        </p>
+                    </i>
+                </blockquote>
+                <h3>
+                    <i>
+                        <b>
+                            (Fonte: <a href="https://pt.wikipedia.org/wiki/Lisboa">Wikipedia</a>)
+                        </b>
+                    </i>
+                </h3>
+            </div>
+        </section>
+
+        <br /><br />
+        <hr />
+
+        <section>
+            <center>
+                <h1>Lisboa é 🔝, por estas e (muitas) mais razões❗</h1>
+                <ul>
+                    <li>
+                        ... é uma cidade com <u>cultura</u> e <u>pontos turísticos</u> de referência 🌍🗺️
+                    </li>
+                    <li>
+                        ... é onde fiz muitas <b>recordações</b> de marcos importantes da minha vida 🖼️
+                    </li>
+                    <li>
+                        ... é onde me encontro a fazer o meu <b>Curso Superior</b> 👨‍🎓📓 -> 💻💾
+                    </li>
+                    <li>
+                        ... é a cidade de berço do meu clube do coração, 🦅
+                        <b>
+                            <span style="color: red; text-shadow: 1px 2px black;">
+                                O GLORIOSO</span>
+                        </b> 🦅
+                    </li>
+                    <li>
+                        ... e é uma das minhas <i>cidades portuguesas</i> favoritas! 🏙️🌉
+                    </li>
+                </ul>
+            </center>
+        </section>
+
+        <hr />
+        <section>
+            <center>
+                <h2>
+                    Fique por aí, e aceda pelos endereços da página para conhecer um pouco mais sobre Lisboa! 🤩😄
+                </h2>
+                <h2>Nas subpáginas poderá consultar:</h2>
+                <ul type="square">
+                    <li>
+                        Uma breve introdução da geografia, e um mapa interactivo de Lisboa
+                        (<a href="local.html">Localização</a>)
+                    </li>
+                    <li>
+                        Fotografias e um vídeo que mostram o que Lisboa tem para oferecer
+                        (<a href="multimedia.html">Multimédia</a>)
+                    </li>
+                    <li>
+                        Um resumo de algumas características da cidade
+                        (<a href="info.html">Informações</a>)
+                    </li>
+                </ul>
+                <br /><br />
+                <h2>Obrigado pela sua visita!</h2>
+                <img src="images/wordcloud_lisboa.png" alt="wordcloud lisboa" />
+            </center>
+        </section>
+
+        <br /><br /><br /><br />
+    </main>
+
+    <hr>
+    <footer>
+        <i>
+            By Rui Miguel Andrade Joaquim - a22005094 - EI 2021/22 @ ULHT
+        </i>
+    </footer>
+</body>
+
+</html>
