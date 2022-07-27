@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ficha 4 - SPA</title>
 
-    <!-- Importação da Font ROBOTO -->
+    <!-- Importação da Font 'Roboto' -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <style>
-        /* =============Media Queries============= */
+        /* ============ MEDIA QUERIES ============ */
         /* Tips para Media Query */
         /* Aplica o estilo especificado enquanto width <= 800px */
         @media only screen and (max-width: 800px) {
@@ -25,12 +25,15 @@
 
         /* ======================================= */
 
+        /* ESTILIZAÇÕES CSS */
+
         * {
             box-sizing: border-box;
             font-family: 'Roboto', sans-serif;
         }
 
         .capitais {
+            /* weird flex but ok */
             display: flex;
             /* estende os items ao longo da linha */
             flex-flow: row wrap;
@@ -38,7 +41,7 @@
             justify-content: space-around;
             /* alinhamento linhas */
             align-content: space-around;
-            background-color: rgba(12, 151, 243, 0.3);
+            background-color: rgba(110, 197, 255, 0.1);
             /* PADDING => relativamente ao proprio elemento => espacamento em funcao da sua border */
             padding: 40px;
         }
@@ -52,11 +55,11 @@
             /* alinhamento horizontal (o elem. está Flexed para Row) */
             justify-content: space-around;
             /* simples border em torno do elemento */
-            border: 1px solid black;
+            border: 1px solid gray;
             /* arredonda os cantos do elemento */
-            border-radius: 15px;
+            border-radius: 10px;
             /* efeito de sombra */
-            box-shadow: 5px 5px 5px grey;
+            box-shadow: 4px 4px 4px grey;
             /* relativamente a elementos vizinhos => espacamento em funcao dos elems. adjacentes */
             margin: 10px;
             /* cor de background simples */
@@ -66,46 +69,160 @@
         .capitais img {
             /* Estilizacao dos elem. imagens dentro dos Cards */
             display: inline-block;
-            /* arredonda 1º e 4º cantos para corresponder ao radius do Card */
-            border-radius: 15px 0 0 15px;
+            /* arredonda 1º e 4º canto, para corresponder ao radius do Card (circula desde C.Sup.Esq, clockwise) */
+            border-radius: 10px 0 0 10px;
             height: 100%;
         }
 
-        /* ??? */
         .capitais div div:last-child {
-            /* Estilizacao das Divs, que contêm os paragrafos com o texto nos Cards */
+            /* Estilizacao das <div> dos paragrafos com os Nomes das capitais */
             width: 150px;
             background-color: white;
-            padding: 20px;
-            /* arredonda 2º e 3º cantos para corresponder ao radius do Card */
-            border-radius: 0 15px 15px 0;
+            font-weight: bold;
+                
+            /* arredonda 2º e 3º canto, para corresponder ao radius do Card (circula desde C.Sup.Esq, clockwise) */
+            border-radius: 0 10px 10px 0;
 
-            /* Centrar texto */
-            text-align: center;
-            /* ALTERNATIVA - para centrar texto */
-            /*display: flex;
+            /* 
+              Centar o texto na div, horizontal && verticalmente.
+              Inicialmente feito com [text-align: center], mas não centrava verticalmente.
+            */
+            display: flex;
             justify-content: center;
-            align-items: center;*/
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+
+        .menu a {
+            padding: 10px;
+            text-decoration: none;
+            color: blue;
+        }
+
+        .menu a:hover {
+            color: white;
+            background-color: silver;
+            font-weight: bold;
+        }
+
+        .menu a:last-child {
+            margin-left: auto;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('./images/bg_main.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
         }
     </style>
 </head>
 
 <body>
     <h1>Capitais europeias</h1>
-    <div class="capitais">
-        <div class="itemCard">
-            <div><img src="images/bruxelas.avif" alt="imagem bruxelas"></div>
-            <div>
-                <p>Bruxelas</p>
+
+    <!-- BARRA NO TOPO (cabeçalho da pagina) -->
+    <header class="menu">
+        <div>
+            <a href="">cidades europeias</a>
+            <a href="">dicas para viajar</a>
+            <a href="">destinos de sonho</a>
+            <a href="" class="kekw">link para labs (broken)</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- CONTEUDOS -->
+
+        <h2>Cidades Europeias e Capitais</h2>
+
+        <div class="capitais">
+            <div class="itemCard">
+                <div><img src="images/bruxelas.jpg" alt="imagem bruxelas"></div>
+                <div>
+                    <p>Bruxelas</p>
+                </div>
+            </div>
+            <div class="itemCard">
+                <div><img src="images/budapeste.jpg" alt="imagem budapeste"></div>
+                <div>
+                    <p>Budapeste</p>
+                </div>
+            </div>
+            <div class="itemCard">
+                <div><img src="images/lisboa.jpg" alt="imagem lisboa"></div>
+                <div>
+                    <p>Lisboa</p>
+                </div>
+            </div>
+            <div class="itemCard">
+                <div><img src="images/londres.jpg" alt="imagem londres"></div>
+                <div>
+                    <p>Londres</p>
+                </div>
+            </div>
+            <div class="itemCard">
+                <div><img src="images/milao.jpg" alt="imagem milao"></div>
+                <div>
+                    <p>Milão</p>
+                </div>
+            </div>
+            <div class="itemCard">
+                <div><img src="images/paris.jpg" alt="imagem paris"></div>
+                <div>
+                    <p>Paris</p>
+                </div>
+            </div>
+            <div class="itemCard">
+                <div><img src="images/praga.jpg" alt="imagem praga"></div>
+                <div>
+                    <p>Praga</p>
+                </div>
+            </div>
+            <div class="itemCard">
+                <div><img src="images/reykiavik.jpg" alt="imagem reykiavik"></div>
+                <div>
+                    <p>Reykiavik</p>
+                </div>
+            </div>
+            <div class="itemCard">
+                <div><img src="images/roma.jpg" alt="imagem roma"></div>
+                <div>
+                    <p>Roma</p>
+                </div>
+            </div>
+            <div class="itemCard">
+                <div><img src="images/varsovia.jpg" alt="imagem varsovia"></div>
+                <div>
+                    <p>Varsóvia</p>
+                </div>
+            </div>
+            <div class="itemCard">
+                <div><img src="images/viena.jpg" alt="imagem viena"></div>
+                <div>
+                    <p>Viena</p>
+                </div>
             </div>
         </div>
-        <div class="itemCard">
-            <div><img src="images/lisboa.avif" alt="imagem lisboa"></div>
-            <div>
-                <p>Lisboa</p>
-            </div>
-        </div>
-    </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <h2>Dicas para Viajantes</h2>
+
+
+        
+    </main>
+
+
 </body>
 
 </html>
